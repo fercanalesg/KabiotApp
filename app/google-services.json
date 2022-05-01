@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705916599923",
+    "project_id": "kabiot-e1e28",
+    "storage_bucket": "kabiot-e1e28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705916599923:android:bef61d61e6e038a279b406",
+        "android_client_info": {
+          "package_name": "com.example.prototipokabiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705916599923-gi8niqssv9pna5j13j5e4sdhouegt9ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF87KakaV797lEAKzJrE2uCsyg5gOkSx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705916599923-gi8niqssv9pna5j13j5e4sdhouegt9ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
