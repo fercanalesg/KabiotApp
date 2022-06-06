@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="prof">
+    <div class="hero">
+        <h1>{% block title %}Education/Experience{% endblock %}</h1>
+        <h5>On this page, we will share more about our education and relevant professional experiences. Do not hesitate
+            to reach out and contact us if you know opportunities that we might be interested in!</h5>
+    </div>
+    <h1 id="prof-title">Profiles</h1>
+    <div class="info-container">
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">Luis</a>
+                    <a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="profile">Lin</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="messages">Ixchel</a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Luis
+                    </div>
+                    <div class="tab-pane fade show active" id="list-profile" role="tabpanel"
+                        aria-labelledby="list-profile-list">
+                        <div class="jumbotron">
+                            <h3 class="display-4">Lin</h3>
+                            <p class="lead">
+                            <h4>Education: CS Major, Undergraduate '25, Cornell University</h4>
+                            <h5>Relevant Coursework: Object-Oriented Programming & Data Structures, Discrete Structures,
+                                Engineering Applications of Operations Research</h5>
+                            </p>
+                            <hr class="my-3">
+                            <p>
+                            <h4>Skills</h4>
+                            <ul>
+                                <li>
+                                    <h5>Proficient in Java and JavaScript</h5>
+                                </li>
+                                <li>
+                                    <h5>Familiar with React, HTML, CSS, bash script, and Swift</h5>
+                                </li>
+                                <li>
+                                    <h5>Technical tools: Canva, Tableau, Excel (for data analysis)</h5>
+                                </li>
+                            </ul>
+                            </p>
+                            <hr class="my-3">
+                            <p>
+                            <h4>Professional Experience</h4>
+                            <ul>
+                                <li>
+                                    <h5>MLH Fellowship, Production Engineering Track, Summer 2022</h5>
+                                </li>
+                                <li>
+                                    <h5>Cornell Cup Robotics Project Team, CS Subteam, August 2021-Present</h5>
+                                </li>
+                                <li>
+                                    <h5>STEM Kids NYC, STEM Teacher, July 2020-Present</h5>
+                                </li>
+                            </ul>
+                            </p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg"
+                                    href="https://www.linkedin.com/in/lin-jing-l-50a6a0216/" target="_blank"
+                                    rel="noopener noreferrer" role="button">Connect</a>
+                                <a class="btn btn-primary btn-lg"
+                                    href="https://drive.google.com/file/d/1MkmQbwmiIQk_UuI9j6dErldnKGbVnEJH/view?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" role="button">View Resume</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    </div>
+                    <div class="jumbotron">
+                        <h3 class="display-4">Ixchel</h3>
+                        <p class="lead">
+                        <h4>Education: Information Technology Engineer, Undergraduate, Tecnologico de Monterrey</h4>
+                        <h5>Relevant Coursework: Databases, Project Management, Robot Vision, Object-Oriented
+                            Programming</h5>
+                        </p>
+                        <hr class="my-3">
+                        <p>
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>
+                                <h5>Experience in Python, HTLM, CSS</h5>
+                            </li>
+                            <li>
+                                <h5>Familiar with C++ and Java </h5>
+                            </li>
+                            <li>
+                                <h5>Technical tools: PowerBI, Canva, MYSQL, Tableau, Excel, Project</h5>
+                            </li>
+                            <li>
+                                <h5>Languages: Spanish,English,German,French</h5>
+                            </li>
+                        </ul>
+                        </p>
+                        <hr class="my-3">
+                        <p>
+                        <h4>Professional Experience</h4>
+                        <ul>
+                            <li>
+                                <h5>JP Morgan, Project Manager, Nov 22-Present</h5>
+                            </li>
+                            <li>
+                                <h5>MLH Fellowship, Production Engineering Track, Summer 2022</h5>
+                            </li>
+                            <li>
+                                <h5>Colaborator in "FinTech" Database Project for Scotiabank group, Fall 2019</h5>
+                            </li>
+                        </ul>
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/ixchelgowu/"
+                                target="_blank" rel="noopener noreferrer" role="button">Connect</a>
+                            <a class="btn btn-primary btn-lg"
+                                href="https://drive.google.com/file/d/1lZi3NXWbHuwwju6uQpzRlmywn0rvuppO/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer" role="button">View Resume</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

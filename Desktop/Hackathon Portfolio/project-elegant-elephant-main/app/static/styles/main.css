@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header {
+    padding-top: 50px;
+    background-color: #E3C6AD;
+}
+.description {
+    color: #000000;
+    left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+    font-size: 6em;
+    color: #135E46;
+}
+.description p {
+    font-size: 1.25em;
+}
+.description button {
+    background: #E3C6AD;
+    color: #478966;
+    border: 1.5px solid #478966;
+}
+.description button:hover {
+    background: #478966;
+}
+.description a {
+    text-decoration: none;
+    color: #478966;
+}
+.description a:hover {
+    color: #E3C6AD;
+}
+.about-cards {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.about-cards h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    color: #135E46;
+}
+.about-cards .col-lg-4{
+    border: none;
+    border-radius: 5%;
+}
+.about-cards .col-lg-12{
+    border: 2px #B67B65 solid;
+    background-color: #f8e1cd;
+}
+.about-cards img {
+    max-width: 60%;
+    padding-top: 30px;
+    align-self: center;
+}
+.about-cards p {
+    padding-bottom: 30px;
+}
+.about-cards .card-title {
+    text-transform: uppercase;
+    color: #135E46
+}
+.about-cards .card-subtitle {
+    font-style: italic;
+    color: #478966;
+}
+.project-title {
+    color: #135E46;
+    text-align: center;
+}
+hr.divider {
+    border: 5px solid #478966;
+    border-radius: 5%;
+    margin: 70px;
+    max-width: 40%;
+    margin-left: 30%;
+    margin-right: auto;
+    border-style: outset;
+}
+.carousel {
+    margin-left: 15%;
+    margin-right: auto;
+    max-width: 70%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.carousel img {
+    object-fit: cover;
+}
+.prof .hero {
+    padding: 200px 50px;
+    background: #135E46;
+    color: white;
+}
+.prof h1 {
+    text-transform: uppercase;
+    color: #E3C6AD;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.prof h5 {
+    max-width: 70%;
+    margin-left: 15%;
+    font-weight: 300;
+    text-align: center;
+}
+.prof .jumbotron {
+    background-color: #d3f8e1;
+    padding-left: 50px;
+}
+.prof .jumbotron hr {
+    border-radius: 5%;
+    border: 2px #135E46 solid;
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.prof .jumbotron h3 {
+    color: #135E46;
+}
+.prof .jumbotron h4 {
+    color: #135E46;
+}
+.prof .jumbotron h5 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+#prof-title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color:#135E46;
+}
+.prof .jumbotron a {
+    margin-top: 20px;
+    margin-right: 10px;
+    background: #D09D7B;
+    color: white;
+    border: none;
+}
+.prof .jumbotron a:hover{
+    background: #B67B65;
+}
+.info-container {
+    /* border: 1px solid black; */
+    border-radius: 5%;
+    margin: 0px 100px;
+    margin-bottom: 100px;
+}
+.prof .list-group a {
+    /* background-color: #D09D7B; */
+    color: #B67B65;
+    padding: 20px;
+    border: 2px #B67B65 solid;
+}
+.list-group-item.list-group-item-action.active {
+    background-color: #E3C6AD;
+    color: #135E46
+}
+.footer {
+    margin-top: 50px;
+    padding: 60px 100px;
+    background-color: black;
+    color: white;
+}
+.footer h6 {
+    padding-bottom: 10px;
+}
+.footer a {
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+    color: white;
+}
+.footer .bottom-info {
+    text-align: center;
+}
+.footer img {
+    max-width: 30px;
+}
+.footer .social-media hr {
+    border: 0.5px solid white;
+    width: 70%;
+    margin-left: 0%;
+}
+.hobbies {
+   margin-bottom: 120px;
+}
+.hobbies .hero {
+    padding: 200px 50px;
+    background: #135E46;
+    color: white;
+    text-align: center;
+}
+.hobbies #page-title {
+    color: #E3C6AD;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.hobbies .hero h5 {
+    max-width: 60%;
+    margin-left: 20%;
+    font-weight: 300;
+}
+.hobbies .hobbies-profile {
+    margin: 80px 80px;
+    background: #fce9d9;
+    padding: 50px;
+}
+.hobbies .hobbies-profile h2 {
+    text-transform: uppercase;
+    color: #135E46;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 2.5em;
+}
+.hobbies .hobbies-profile hr {
+    border: 2px #135E46 solid;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+.hobbies .hobbies-profile button {
+    background: #478966;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+    margin-right: 10px;
+    transform: translateY(-5px);
+}
+.hobbies .hobbies-profile button:hover {
+    background: #135E46;
+}
+.hobbies .hobbies-profile .card {
+    border: 3px #135E46 solid;
+    border-radius: 5%;
+}
+.hobbies .hobbies-profile .card:hover{
+    color:#B67B65;
+}
+.hobbies .hobbies-profile .card img {
+    max-width: 100%;
+}
