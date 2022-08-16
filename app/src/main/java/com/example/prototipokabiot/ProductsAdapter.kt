@@ -47,11 +47,6 @@ class ProductsAdapter (var mContext : Context, var listaProductos : ArrayList<Pr
             }
         }
 
-        holder.theDeleteBut.setOnClickListener() {                // Declaramos la funcionalidad que va tener el boton de "Delete" en cada elemento de la lista
-            if (mContext is laLista) {                            // Utilizamos como base el contexto de la Activity "laLista"
-                (mContext as laLista).deleteProductFirebase(elemento)
-            }
-        }
 
         holder.theImage.setOnClickListener(){                      //Declaramos la funcionalidad que va tener la imagen en cada elemento de la lista
             if (mContext is laLista) {                            // Utilizamos como base el contexto de la Activity "laLista"

@@ -230,47 +230,7 @@ class laLista : AppCompatActivity() {
     fun setRecyclerOnBlank(){
 
     }
-    fun deleteProductFirebase(prodModelClass: Producto){
 
-        val rootRef = FirebaseDatabase.getInstance().reference
-        val db = FirebaseDatabase.getInstance().reference
-        val builder = AlertDialog.Builder(this)
-
-        val nombre = prodModelClass.nombreProducto   // en una variable guardamos uno de los datos de la fila que queremos borrar (a la que le dimos click), en este caso el nombre
-        var elId : String
-
-
-        builder.setTitle("Eliminar producto")
-        builder.setMessage("Seguro que deseas eliminar ${prodModelClass.nombreProducto}?")
-        builder.setIcon(R.drawable.ic_warning)
-
-        builder.setPositiveButton("Si"){ dialogInterface, which ->
-            val Query = rootRef.child("Productos").orderByChild("nombreProducto").equalTo(nombre)
-            val valueEventListener = object : ValueEventListener {
-                override fun onDataChange(dataSnapshot: DataSnapshot) {
-                    for (ds in dataSnapshot.children) {
-                        val id = ds.key.toString()
-                        rootRef.child("Productos").child(id).removeValue()
-
-                    }
-                }
-                override fun onCancelled(databaseError: DatabaseError) {
-                    Log.d("TAG", databaseError.getMessage()) //Don't ignore errors!
-                }
-            }
-            Query.addListenerForSingleValueEvent(valueEventListener)
-            readDataFirebase()
-            dialogInterface.dismiss()
-        }
-
-        builder.setNegativeButton("No"){ dialogInterface, which ->
-            dialogInterface.dismiss()
-        }
-
-        val dialogoDeAlerta : AlertDialog = builder.create()  // Sirve para crear el dialogo de alerta, se pone al final
-        dialogoDeAlerta.setCancelable(false)
-        dialogoDeAlerta.show()
-    }
 
     fun setIconList() : ArrayList<Icon>{
         var lista : ArrayList<Icon> = ArrayList()
@@ -469,6 +429,49 @@ class laLista : AppCompatActivity() {
             updateDialog.dismiss()
         }
         updateDialog.show() // El show se pone al final
+    }*/
+
+
+    /*fun deleteProductFirebase(prodModelClass: Producto){
+
+        val rootRef = FirebaseDatabase.getInstance().reference
+        val db = FirebaseDatabase.getInstance().reference
+        val builder = AlertDialog.Builder(this)
+
+        val nombre = prodModelClass.nombreProducto   // en una variable guardamos uno de los datos de la fila que queremos borrar (a la que le dimos click), en este caso el nombre
+        var elId : String
+
+
+        builder.setTitle("Eliminar producto")
+        builder.setMessage("Seguro que deseas eliminar ${prodModelClass.nombreProducto}?")
+        builder.setIcon(R.drawable.ic_warning)
+
+        builder.setPositiveButton("Si"){ dialogInterface, which ->
+            val Query = rootRef.child("Productos").orderByChild("nombreProducto").equalTo(nombre)
+            val valueEventListener = object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    for (ds in dataSnapshot.children) {
+                        val id = ds.key.toString()
+                        rootRef.child("Productos").child(id).removeValue()
+
+                    }
+                }
+                override fun onCancelled(databaseError: DatabaseError) {
+                    Log.d("TAG", databaseError.getMessage()) //Don't ignore errors!
+                }
+            }
+            Query.addListenerForSingleValueEvent(valueEventListener)
+            readDataFirebase()
+            dialogInterface.dismiss()
+        }
+
+        builder.setNegativeButton("No"){ dialogInterface, which ->
+            dialogInterface.dismiss()
+        }
+
+        val dialogoDeAlerta : AlertDialog = builder.create()  // Sirve para crear el dialogo de alerta, se pone al final
+        dialogoDeAlerta.setCancelable(false)
+        dialogoDeAlerta.show()
     }*/
 
 

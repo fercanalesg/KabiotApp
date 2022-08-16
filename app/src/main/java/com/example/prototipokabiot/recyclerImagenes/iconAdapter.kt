@@ -31,7 +31,7 @@ class iconAdapter(var mContext : Context, var listaProductos : ArrayList<Icon>):
         holder.theIcon.setOnClickListener{
 
             holder.theCardView.setCardBackgroundColor(ContextCompat.getColor(mContext, R.color.lightGray))
-            Toast.makeText(mContext, "Presionaste: " + elemento.imagen, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(mContext, "Presionaste: " + elemento.imagen, Toast.LENGTH_SHORT).show()
             (mContext as laLista).chooseImage = true  // Seteamos nuestra variable global a true, para dar a entender que el usuario SI seleccionó una imagen de las opciones
             (mContext as laLista).image = elemento.imagen
         }
